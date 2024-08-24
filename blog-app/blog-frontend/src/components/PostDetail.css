@@ -1,0 +1,158 @@
+/* PostDetail.css */
+.post-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .back-button,
+  .delete-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .back-button:hover,
+  .delete-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* PostDetail.css */
+.post-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .back-button,
+  .delete-button,
+  .edit-button,
+  .save-button,
+  .cancel-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 5px;
+  }
+  
+  .back-button:hover,
+  .delete-button:hover,
+  .edit-button:hover,
+  .save-button:hover,
+  .cancel-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .edit-button {
+    background-color: #28a745;
+  }
+  
+  .edit-button:hover {
+    background-color: #218838;
+  }
+  
+  .save-button {
+    background-color: #007bff;
+  }
+  
+  .cancel-button {
+    background-color: #6c757d;
+  }
+  
+  .cancel-button:hover {
+    background-color: #5a6268;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  

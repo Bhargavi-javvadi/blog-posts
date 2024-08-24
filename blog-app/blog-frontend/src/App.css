@@ -1,0 +1,608 @@
+.app-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 60px;
+  background-color: #F2F2F2;
+  padding-top: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #DADADA;
+}
+
+.sidebar a {
+  margin: 20px 0;
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons .login {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.auth-buttons .join-now {
+  background-color: #7B61FF;
+  border: none;
+  color: #FFF;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.new-post {
+  max-width: 00px; /* Increased the width */
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-post h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+}
+
+.new-post form {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-post input[type="text"], 
+.new-post textarea {
+  width: 100%;
+  margin-bottom: 20px; /* Increased margin for more space between fields */
+  padding: 15px; /* Increased padding */
+  font-size: 16px; /* Increased font size */
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.new-post textarea {
+  height: 300px; /* Increased height for the textarea */
+}
+
+.new-post input[type="file"] {
+  margin-bottom: 20px;
+}
+
+.new-post button {
+  padding: 15px 30px; /* Increased padding */
+  background-color: #7B61FF;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px; /* Increased button text size */
+}
+
+.new-post button:hover {
+  background-color: #6a53e2;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+li h3 {
+  margin: 0;
+}
+
+li p {
+  margin: 10px 0;
+}
+
+li button {
+  padding: 5px 10px;
+  background-color: #FF4D4D;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #e03a3a;
+}
+
+
+.new-post input[type="text"],
+.new-post textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+.new-post textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.new-post input[type="text"]:focus,
+.new-post textarea:focus {
+  border-color: #888;
+}
+
+.new-post button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.new-post button:hover {
+  background-color: #0056b3;
+}
+.post-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-list li {
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-list h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.post-list p {
+  margin: 10px 0;
+}
+
+.post-list small {
+  display: block;
+  color: #888;
+}
+
+.post-list button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.post-list button:hover {
+  background-color: #c0392b;
+}
+.app-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: #444;
+}
+
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+/* PostDetail.css */
+
+.post-detail {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  font-size: 18px;
+}
+
+strong {
+  font-weight: bold;
+}
+.post-detail {
+  position: relative;
+  padding: 20px;
+}
+
+.rnd {
+  margin: 20px 0;
+}
+/* General Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  width: 60px;
+  background-color: #F2F2F2;
+  padding-top: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #DADADA;
+  animation: slideIn 0.8s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar a {
+  margin: 20px 0;
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  animation: fadeInText 0.8s ease-in-out forwards;
+}
+
+.sidebar a:nth-child(1) { animation-delay: 0.3s; }
+.sidebar a:nth-child(2) { animation-delay: 0.5s; }
+.sidebar a:nth-child(3) { animation-delay: 0.7s; }
+.sidebar a:nth-child(4) { animation-delay: 0.9s; }
+
+.sidebar a:hover {
+  color: #7B61FF;
+  transform: scale(1.1);
+}
+
+.sidebar a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -60px;
+  height: 100%;
+  width: 60px;
+  background-color: #7B61FF;
+  transition: transform 0.3s ease-in-out;
+  transform: skewX(-30deg) translateX(100%);
+  z-index: -1;
+}
+
+.sidebar a:hover::before {
+  transform: skewX(-30deg) translateX(0);
+}
+
+.sidebar:hover {
+  width: 200px;
+  transition: width 0.3s ease;
+}
+
+.sidebar:hover a {
+  text-align: left;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Auth Buttons */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons .login,
+.auth-buttons .join-now {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.auth-buttons .login {
+  background-color: transparent;
+  border: none;
+  color: #000;
+}
+
+.auth-buttons .join-now {
+  background-color: #7B61FF;
+  color: #FFF;
+}
+
+.auth-buttons .login:hover,
+.auth-buttons .join-now:hover {
+  background-color: #6a53e2;
+  transform: translateY(-2px);
+}
+
+/* New Post Form */
+.new-post {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.new-post h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.new-post input[type="text"], 
+.new-post textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+.new-post input[type="text"]:focus,
+.new-post textarea:focus {
+  border-color: #7B61FF;
+}
+
+.new-post button {
+  padding: 15px 30px;
+  background-color: #7B61FF;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.new-post button:hover {
+  background-color: #6a53e2;
+  transform: translateY(-2px);
+}
+
+/* Post List */
+.post-list li {
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.post-list li:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.post-list button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.post-list button:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+/* Post Detail */
+.post-detail {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.back-button,
+.delete-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+p {
+  font-size: 18px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+strong {
+  font-weight: bold;
+  animation: fadeIn 1.4s ease-in-out;
+}
+
+/* Image Preview */
+.new-post img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.new-post img:hover {
+  transform: scale(1.05);
+}
+
+/* RND Component */
+.rnd {
+  margin: 20px 0;
+  animation: fadeIn 1.5s ease-in-out;
+}
